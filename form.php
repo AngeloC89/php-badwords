@@ -1,5 +1,5 @@
 <?php
-
+ $frase = $_GET['paragraph'];
 
 ?>
 
@@ -24,8 +24,11 @@
 </head>
 
 <body>
-    
-    </form>
+    <h2>Frase scritta:</h2>
+    <p><?php echo $frase?></p>
+
+
+
 
    
    

@@ -27,12 +27,12 @@
 <body>
 <h1 class="text-center">Bad Words</h1>
     <form action="form.php" method="get" class="text-center d-flex flex-column w-50 m-3 ">
-        <label for="paragraf" >Scrivi una frase</label>
-        <input name="paragraf" id="paragraf" type="text"></input>
+        <label for="paragraph" >Scrivi una frase</label>
+        <input name="paragraph" id="paragraph" type="text"></input>
      
         <br>
         <br>
-        <label for="Censure">Censere word</label>
+        <label for="Censure">Censure word</label>
         <input type="text" name="Censure">
         <input type="submit" class="btn btn-primary w-25 my-1"></input>
     </form>

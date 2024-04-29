@@ -1,12 +1,12 @@
 <?php
 
- $paragraph = $_GET['paragraph'];
- $censura = $_GET['censura'];
+$paragraph = $_GET['paragraph'];
+$censura = $_GET['censura'];
 
- $fraseCensurata = str_replace($censura, (str_repeat("*", strlen($censura))), $paragraph);
+$fraseCensurata = str_replace($censura, (str_repeat("*", strlen($censura))), $paragraph);
 
- $lenBefore = strlen($paragraph);
- $lenAfter = strlen($fraseCensurata);
+$lenBefore = strlen($paragraph);
+$lenAfter = strlen($fraseCensurata);
 
 ?>
 
@@ -29,25 +29,24 @@
     <title>Bad Words</title>
 </head>
 
-<body class="p-2">
-   
-<!-- frase senza censure -->
-    <h2>Frase scritta:</h2>
-    <p><?php echo $paragraph ?></p> 
-    <p>Lunghezza prima della censura: <?php echo $lenBefore ?></p>
-  
-    <!-- frase censurata -->
-    <h2>Frase censurata:</h2>
-    <p><?php echo $fraseCensurata ?></p>
-    <p>Lunghezza dopo la censura: <?php echo $lenAfter ?></p>
+<body>
+    <h1 class="text-center my-3">Bad Words</h1>
+    <div id="box">
+        <!-- frase senza censure -->
+        <h2>Frase scritta:</h2>
+        <p><?php echo $paragraph ?></p>
+        <p>Lunghezza prima della censura: <?php echo $lenBefore ?></p>
+
+        <!-- frase censurata -->
+        <h2>Frase censurata:</h2>
+        <p><?php echo $fraseCensurata ?></p>
+        <p>Lunghezza dopo la censura: <?php echo $lenAfter ?></p>
+    </div>
 
 
 
 
 
-   
-   
-    
 </body>
 
 </html>

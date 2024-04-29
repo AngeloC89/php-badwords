@@ -1,5 +1,11 @@
 <?php
- $frase = $_GET['paragraph'];
+
+ $paragraph = $_GET['paragraph'];
+ $censura = $_GET['censura'];
+
+ $fraseCensurata = str_replace($censura, "***", $paragraph);
+
+
 
 ?>
 
@@ -25,7 +31,8 @@
 
 <body>
     <h2>Frase scritta:</h2>
-    <p><?php echo $frase?></p>
+    <p><?php echo $fraseCensurata ?></p>
+
 
 
 

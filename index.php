@@ -32,8 +32,8 @@
      
         <br>
         <br>
-        <label for="Censure">Censure word</label>
-        <input type="text" name="Censure">
+        <label for="censura">Censura la parola:</label>
+        <input type="text" name="censura">
         <input type="submit" class="btn btn-primary w-25 my-1"></input>
     </form>
         

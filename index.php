@@ -26,7 +26,8 @@
 
 <body>
 <h1 class="text-center my-3">Bad Words</h1>
-    <form action="form.php" method="get" class="text-center d-flex flex-column w-50 m-3 ">
+
+    <form id="box" action="form.php" method="get" class="text-center d-flex flex-column   ">
         <label for="paragraph" >Scrivi una frase</label>
         <input name="paragraph" id="paragraph" type="text"></input>
      
